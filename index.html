@@ -6,13 +6,13 @@
 	<style>
 	html { font-family: 'Spoqa Han Sans';}
 	body, ul, li {margin: 0; padding: 0; margin-top: 0;}
-		.section{height: 1000px; transition: all 1s;
+		.section{height: 800px; transition: all 1s;
 		 margin-top: 0; position: relative;}
 		
 	
 		#sectionA{background: white;  transition: all 1s;}
 		#sectionB{background: url('alone.jpg'); background-repeat: no-repeat; background-size: 100%; transition: all 0.7s;}
-		#sectionC{background: url('namiya.jpg'); background-size:auto 100%; transition: all 1s; padding-top: 0px; margin-top:0px;  }
+		#sectionC{background: url('namiya.jpg'); background-size: auto 100%; transition: all 1s; padding-top: 0px; margin-top:0px; background-repeat: no-repeat; }
 		#sectionD{background: black; background-size:100% auto; transition: all 1s;}
 		#sectionE{background: white; transition: all 1s;}
 		#sectionF{background: pink; transition: all 0.6s;}
@@ -27,9 +27,9 @@
 
 		}
 		#titleA {transition: all 1s; padding-top: o;}
-		#titleB {color: white; text-align: center; position: relative; top:-200px; text-shadow: 2px 2px black; transition: all 0.7s;padding-left: 1000px; width: 200px; line-height: 35px;}
+		#titleB {color: black; text-align: center; position: relative; top:-200px; text-shadow: 2px 2px white; transition: all 0.7s;padding-left: 1000px; width: 200px; line-height: 35px;}
 		#titleC {transition: all 1s; top:400px; font-size: 1em; margin-left: 560px; line-height: 35px; width: 500px;}
-		#titleD {color: white; text-align: center; position: relative; top:200px; text-shadow: 2px 2px black; transition: all 0.7s;padding-left: 100px; width: 200px; line-height: 35px;}
+		#titleD {color: black; text-align: center; position: relative; top:200px; text-shadow: 2px 2px white; transition: all 0.7s;padding-left: 100px; width: 200px; line-height: 35px;}
 		#titleE {transition: all 1s; top: 500px;}
 		#titleF {transition: all 0.5s;}
 		body {background: white;}
@@ -47,8 +47,8 @@
 		<h1 id="titleA"><img id="hello" img src= "hello.gif">
 		</h1>
 		<h6>안녕하세요. 당신의 북가이드 chaeny입니다.<br>
-		다음 4가지의 항목은 당신에게 드리는 책 추천입니다.<br>
-		밑으로 스크롤 해 주세요.<br></h6>
+		다음 5가지의 항목은 당신에게 드리는 책 추천입니다.<br>
+		밑으로 스크롤 해 주세요 <br></h6>
 	</div>
 	<div class="section" id="sectionB">
 	<h3 id="titleD">저자가 말하는 ‘합리적 개인주의’란 유아적인 이기주의나 사회를 거부하는 고립주의가 아니다. 합리적 개인주의자는 인간은 필연적으로 사회를 이루어 살 수밖에 없고, 그것이 개인의 행복 추구에 필수적임을 이해한다.</h3>
@@ -79,7 +79,7 @@
 			
 
 
-		if(scrollH > 51 && scrollH < 500){
+		if(scrollH > 51 && scrollH < 400){
 			sectionA.style.background = "white";
 			titleA.style.color = "pink";
 			titleA.style.fontSize = "10em";
@@ -108,17 +108,15 @@
 		if(scrollH > 50){
 			sectionD.style.backgroundAttachment = "fixed"; }
 
-		if(scrollH > 950 && scrollH <1800)
+		if(scrollH > 750 && scrollH <1600)
 			{	
-			titleB.style.paddingTop = "10px";
-			titleB.style.color ="white";
+			
 			titleB.style.opacity = "1";
 			titleD.style.opacity = "1";
 
 			}
 			else {
-			titleB.style.paddingTop = "-100px";
-			titleB.style.color = "gray";
+	
 			titleB.style.opacity = "0";
 			;
 			titleD.style.opacity = "0";
@@ -126,12 +124,12 @@
 
 			}
 
-		if(scrollH > 1900 && scrollH < 2400 ){titleF.style.fontSize = "1em";}
+		if(scrollH > 1550 && scrollH < 1900 ){titleF.style.fontSize = "1em";}
 			else {titleF.style.fontSize = "0.3em";}
 
 
 
-		if(scrollH > 2800 && scrollH < 3200 ){
+		if(scrollH > 2200 && scrollH < 2600 ){
 			jong.style.paddingTop = "200px";
 			jong.style.width = "350px";
 
@@ -149,11 +147,11 @@
 			//titleD.style.fontSize = "0.5em";
 			//titleD.style.color = "gray";	}
 
-		if(scrollH > 5005)
+		if(scrollH > 4805)
 			{titleE.style.paddingTop = "200px";}
 			else {titleE.style.paddingTop = "0px";}
 
-		if(scrollH > 4000 && scrollH < 5250 ){
+		if(scrollH > 3800 && scrollH < 5050 ){
 			titleE.style.fontSize = "6em";
 			titleE.style.fontWeight = "100";
 			titleE.style.transform = "rotateX(180deg)";
