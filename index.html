@@ -17,7 +17,7 @@
 		#sectionE{background: url('travel.jpg'); background-size: auto 100%; background-repeat: no-repeat; transition: all 1s; background-attachment: fixed;
     background-position: center; }
 		#sectionF{background: pink; transition: all 0.6s;}
-		h1 {color: white; text-align: center; position: absolute; top:150px; font-size: 1em; }
+		h1 {color: white; text-align: center; position: relative; top:150px; font-size: 1em; line-height: 35px; }
 		h6 {color: black; position: relative; top:150px; font-size: 1em; margin-left: 160px; line-height: 35px;}
 		h2 {color: white; position: relative; top:200px; font-size: 1em; margin-left: 160px; line-height: 35px; width: 500px;}
 		h3 {color: white; position: relative; width: 500px; }
@@ -31,7 +31,7 @@
 		#titleB {color: black; text-align: center; position: absolute; top:200px; text-shadow: 2px 2px white; transition: all 0.7s;padding-left: 77%; width: 200px; line-height: 35px; font-size: 1.1em;}
 		#titleC {transition: all 1s; top:400px; font-size: 1em; margin-left: 560px; line-height: 35px; width: 500px;}
 		#titleD {color: black; text-align: center; position: absolute; top:200px; text-shadow: 2px 2px white; transition: all 0.7s;padding-left: 12%; width: 200px; line-height: 35px;}
-		#titleE {transition: all 1s; top: 400px; left: 40%;}
+		#titleE {transition: all 1s; top: 40%; left: 60%; width: 500px;  text-align: center; position: relative;}
 		#titleF {transition: all 0.5s;}
 		#titleG {color: white; text-align: center; position: absolute; top:230px; transition: all 0.7s; left: 55%; width: 510px; line-height: 35px; font-weight: 500;}
 		body {background: white;}
@@ -39,6 +39,7 @@
 
 		#jong {transition: all 1s; width: 350px; margin-left: 150px; top: 0;}
 		#alone {transition: all 1s; width: 100%; height:100%; padding-top: 0px; }
+		#femPic {transition: all 1s; position: absolute; left: 15%; top: 7%;}
 		
 	</style>
 </head>
@@ -76,7 +77,8 @@
 	</div> 
 
 	<div class="section" id="sectionF">
-		<h1 id="titleE"> Thanks </h1>
+		<img src="fem.jpg" img id = "femPic">
+		<h1 id="titleE"> 여자라는 이유만으로 ‘여자는 ~해야 한다. 할 수 없다, 하지 말아야 한다’라는 말을 듣지 않는 세계에서 살고 싶었던 저자는 페미니즘은 여성만을 위한 것이 아니라 여성과 남성 모두를 위한 것이라고 말하며 남성들에게 연대를 요청한다. 따라서 전통적인 성역할에 고착된 사고방식이 남성과 여성 모두를 짓누르고 있으며, 페미니즘을 통해 우리 모두가 더욱 자유롭고 행복한 삶을 살 수 있다는 것을 역설한다.  </h1>
 	</div>
 
 <script>
@@ -110,10 +112,10 @@
 		//}
 
 
-		if(scrollH > 50){
-			sectionD.style.backgroundAttachment = "fixed"; }
+		//if(scrollH > 50){
+			//sectionD.style.backgroundAttachment = "fixed"; }
 
-		if(scrollH > 750 && scrollH <1600)
+		if(scrollH > 400 && scrollH <800)
 			{	
 			
 			titleB.style.opacity = "1";
@@ -123,7 +125,6 @@
 			else {
 	
 			titleB.style.opacity = "0";
-			;
 			titleD.style.opacity = "0";
 
 
@@ -150,20 +151,21 @@
 		else{
 			titleG.style.opacity = "0";	}
 
-		if(scrollH > 3805)
+		if(scrollH > 3005)
 			{titleE.style.paddingTop = "200px";}
 			else {titleE.style.paddingTop = "0px";}
 
 		if(scrollH > 3500 && scrollH < 5050 ){
-			titleE.style.fontSize = "6em";
-			titleE.style.fontWeight = "100";
+			titleE.style.fontSize = "2em";
+			titleE.style.fontWeight = "bold";
 			titleE.style.transform = "rotateX(180deg)";
+			femPic.style.opacity = "1";
 		
 		}else{
-			titleE.style.fontSize = "5em";
-			titleE.style.fontWeight = "bold";
+			titleE.style.fontSize = "1em";
+			titleE.style.fontWeight = "100";
 			titleE.style.transform = "rotateX(0deg)";
-		
+			femPic.style.opacity = "0";
 		}
 
 	}
