@@ -1,39 +1,42 @@
 <!doctype html>
 <head>
 	<meta charset="uft-8">
-	<link href='normalize.css' rel="stylesheet">
-	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	<link href='normalize.css'>
+	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css's>
 	<style>
 	html { font-family: 'Spoqa Han Sans';}
-	body, ul, li {margin: 0; padding: 0; margin-top: 0;}
+	body, section {margin: 0; padding: 0; top:0;}
 		.section{height: 800px; transition: all 1s;
-		 margin-top: 0; position: relative;}
+		 margin: 0; position: relative; padding: 0;}
 		
 	
-		#sectionA{background: white;  transition: all 1s;}
-		#sectionB{background: url('alone.jpg'); background-repeat: no-repeat; background-size: 100%; transition: all 0.7s;}
-		#sectionC{background: url('namiya.jpg'); background-size: auto 100%; transition: all 1s; padding-top: 0px; margin-top:0px; background-repeat: no-repeat; }
+		#sectionA{background: white;  transition: all 1s; padding-top: 0; margin-top: 0; }
+		#sectionB{background: url('alone.jpg'); background-repeat: no-repeat; background-size: 100%; transition: all 0.7s; bottom: 0;}
+		#sectionC{background: url('namiya.jpg'); background-size:  100%; transition: all 1s; padding-top: 0px; margin-top:0px; background-repeat: no-repeat; }
 		#sectionD{background: black; background-size:100% auto; transition: all 1s;}
-		#sectionE{background: white; transition: all 1s;}
+		#sectionE{background: url('travel.jpg'); background-size: auto 100%; background-repeat: no-repeat; transition: all 1s; background-attachment: fixed;
+    background-position: center; }
 		#sectionF{background: pink; transition: all 0.6s;}
-		h1 {color: white; text-align: center; position: relative; top:150px; font-size: 1em; }
+		h1 {color: white; text-align: center; position: absolute; top:150px; font-size: 1em; }
 		h6 {color: black; position: relative; top:150px; font-size: 1em; margin-left: 160px; line-height: 35px;}
 		h2 {color: white; position: relative; top:200px; font-size: 1em; margin-left: 160px; line-height: 35px; width: 500px;}
 		h3 {color: white; position: relative; width: 500px; }
-		h4 {padding: 0px; top: 0px; margin:0px;}
+		h4 {padding: 0px; margin:0px; color: white;}
 		h5 {color: white; text-align: center; position: relative; margin-top:0; font-size: 1em;}
-		h7 {color: white; position: relative; top:400px; font-size: 1em; margin-left: 560px; line-height: 35px; width: 500px;}
+
 
 
 		}
-		#titleA {transition: all 1s; padding-top: o;}
-		#titleB {color: black; text-align: center; position: relative; top:-200px; text-shadow: 2px 2px white; transition: all 0.7s;padding-left: 1000px; width: 200px; line-height: 35px;}
+		#titleA {transition: all 1s; padding-top: 0; position: absolute;}
+		#titleB {color: black; text-align: center; position: absolute; top:200px; text-shadow: 2px 2px white; transition: all 0.7s;padding-left: 77%; width: 200px; line-height: 35px; font-size: 1.1em;}
 		#titleC {transition: all 1s; top:400px; font-size: 1em; margin-left: 560px; line-height: 35px; width: 500px;}
-		#titleD {color: black; text-align: center; position: relative; top:200px; text-shadow: 2px 2px white; transition: all 0.7s;padding-left: 100px; width: 200px; line-height: 35px;}
-		#titleE {transition: all 1s; top: 500px;}
+		#titleD {color: black; text-align: center; position: absolute; top:200px; text-shadow: 2px 2px white; transition: all 0.7s;padding-left: 12%; width: 200px; line-height: 35px;}
+		#titleE {transition: all 1s; top: 400px; left: 40%;}
 		#titleF {transition: all 0.5s;}
+		#titleG {color: white; text-align: center; position: absolute; top:230px; transition: all 0.7s; left: 55%; width: 510px; line-height: 35px; font-weight: 500;}
 		body {background: white;}
-		#hello {width: 500px; margin-left: -400px; top:150px;}
+		#hello {width: 500px; margin-left: 150px;  position: absolute; }
+
 		#jong {transition: all 1s; width: 350px; margin-left: 150px; top: 0;}
 		#alone {transition: all 1s; width: 100%; height:100%; padding-top: 0px; }
 		
@@ -42,11 +45,10 @@
 
 <body>
 	
-	</header> 
+	
 	<div class="section" id="sectionA">
-		<h1 id="titleA"><img id="hello" img src= "hello.gif">
-		</h1>
-		<h6>안녕하세요. 당신의 북가이드 chaeny입니다.<br>
+		<img id="hello" img src= "hello.gif">
+		<h6 id="titleA">안녕하세요. 당신의 북가이드 chaeny입니다.<br>
 		다음 5가지의 항목은 당신에게 드리는 책 추천입니다.<br>
 		밑으로 스크롤 해 주세요 <br></h6>
 	</div>
@@ -60,35 +62,38 @@
 	</div>
 
 	<div class="section" id="sectionD">
-		<h4><img id ="jong" img src = "jong.jpg"></h4>
+		<img id ="jong" img src = "jong.jpg">
 		<h3 id="titleC"> 
 		사이코패스 중에서도 상위 1퍼센트에 속하는 ‘순수 악인’인 유진을 그리기 위해 저자는 어린 시절부터 학습되어 온 도덕과 교육, 윤리적 세계관을 철저하게 깨나갔고, 내 안의 악이 어떤 형태로 자리 잡고 있다가, 어떤 계기로 점화되고, 어떤 방식으로 진화해 가는지 상세하게 써내려갔다. 저자는 이를 통해 우리의 본성 안에 자리 잡은 그 ‘어두운 숲’을 똑바로 응시하고 이해하며 내면의 악, 타인의 악, 나아가 삶을 위협하는 포식자의 악에 제대로 대처해나가길 바라고 있다. </h3>
 		
 			
 		</div>
-	<!--<div class="section" id="sectionE">
-		<h1 id="titleD"> I don't wanna do HOMEWORK </h1>
-	</div> -->
+	<div class="section" id="sectionE">
+		<h4 id="titleG"> 나는 더이상 여행을 미루지 않기로 했다.<br>
+		여행은 떠나는 것보다 준비하는 것이 더 힘들다는 말이 있다. 챙길 것도 많은 데다, 인증샷에 대한 압박, 혼자가 되는 두려움 등에 지배당하고 있어 모처럼 얻은 휴가 기간에 피로를 더 안고 돌아오기도 한다. 그렇게 여행을 피곤의 대상으로 받아들이는 모든 이들에게 책『나는 더 이상 <br>여행을 미루지 않기로 했다』의 저자 정은길은 여행을 통해 진짜 자신의 목소리에 귀 기울이라고 말한다. 여행을 떠나 낯선 곳에서 제2의 <br>시선으로 스스로를 바라보고 차근차근 자신을 옥죄고 있던 족쇄를 벗어던지면 비로소 객관적인 삶의 태도를 견지할 수 있게 된다는 것이다.  </h4>
+
+
+	</div> 
+
 	<div class="section" id="sectionF">
 		<h1 id="titleE"> Thanks </h1>
 	</div>
+
 <script>
+
 	window.onscroll = function(){
 		console.log(document.body.scrollTop);
 		var scrollH = document.body.scrollTop;
+
 			
 
 
-		if(scrollH > 51 && scrollH < 400){
+		if(scrollH > 80 && scrollH < 300){
 			sectionA.style.background = "white";
-			titleA.style.color = "pink";
-			titleA.style.fontSize = "10em";
-			titleA.style.fontWeight = "bold";
+			
 		}else{
 			sectionA.style.background = "pink";
-			titleA.style.color = "white";
-			titleA.style.fontSize= "5em";
-			titleA.style.fontWeight= "900";
+			
 			}
 
 	
@@ -140,18 +145,16 @@
 			}
 	
 
-		//if(scrollH > 3900 && scrollH < 4100){
-			//titleD.style.fontSize = "3em";
-			//titleD.style.color = "red";}
-		//else{
-			//titleD.style.fontSize = "0.5em";
-			//titleD.style.color = "gray";	}
+		if(scrollH > 2500 && scrollH < 3000){
+			titleG.style.opacity = "1";}
+		else{
+			titleG.style.opacity = "0";	}
 
-		if(scrollH > 4805)
+		if(scrollH > 3805)
 			{titleE.style.paddingTop = "200px";}
 			else {titleE.style.paddingTop = "0px";}
 
-		if(scrollH > 3800 && scrollH < 5050 ){
+		if(scrollH > 3500 && scrollH < 5050 ){
 			titleE.style.fontSize = "6em";
 			titleE.style.fontWeight = "100";
 			titleE.style.transform = "rotateX(180deg)";
